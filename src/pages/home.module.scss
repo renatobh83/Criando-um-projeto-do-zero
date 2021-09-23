@@ -1,6 +1,9 @@
 .content {
   max-width: 700px;
+  height: 108px;
 
+  display: grid;
+  gap: 1.2rem;
   .mr {
     margin-right: 8rem;
   }
