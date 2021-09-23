@@ -1,1 +1,14 @@
-// TODO
+.container {
+  height: 6rem;
+}
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  height: 6rem;
+  padding: 0 2rem;
+  position: relative;
+  img {
+    position: absolute;
+    top: 50%;
+  }
+}

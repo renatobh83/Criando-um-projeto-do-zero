@@ -1,1 +1,19 @@
-// TODO
+.banner {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    height: 300px;
+  }
+  margin-bottom: 2rem;
+}
+.postContent {
+  margin-top: 2rem;
+
+  P {
+    margin: 2rem 0;
+  }
+}
