@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { getPrismicClient } from '../services/prismic';
@@ -8,7 +9,6 @@ import ptBR from 'date-fns/locale/pt-BR';
 
 import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
-import React, { useState } from 'react';
 import { getPosts } from '../util/getPosts';
 
 interface Post {
@@ -34,6 +34,7 @@ export default function Home({ postsPagination }: HomeProps) {
   const [isActive, setIsActive] = useState(!!postsPagination.next_page);
   const [posts, setPosts] = useState(postsPagination.results || []);
   const [nextPage, setNextPage] = useState(postsPagination.next_page || null);
+
   async function handleNewPosts() {
     const response = await fetch(nextPage);
     const data = await response.json();

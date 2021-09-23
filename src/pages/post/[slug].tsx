@@ -1,15 +1,15 @@
+import { useState } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { FiCalendar, FiUser, FiClock } from 'react-icons/fi';
+import { useRouter } from 'next/router';
 import { getPrismicClient } from '../../services/prismic';
 import Prismic from '@prismicio/client';
+import { FiCalendar, FiUser, FiClock } from 'react-icons/fi';
+import { format } from 'date-fns';
+import PrismicDOM from 'prismic-dom';
 
 import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
-import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
-import PrismicDOM from 'prismic-dom';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 
 interface Post {
   first_publication_date: string | null;
