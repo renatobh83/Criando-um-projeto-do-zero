@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import styles from './header.module.scss';
 
 export default function Header() {
@@ -7,7 +8,7 @@ export default function Header() {
       <div className={styles.content}>
         <Link href="/">
           <a>
-            <img src="/logo.svg" alt="logo" />
+            <img src="/images/logo.svg" alt="logo" className={styles.logo} />
           </a>
         </Link>
       </div>
