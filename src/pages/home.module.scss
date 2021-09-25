@@ -7,4 +7,18 @@
   .mr {
     margin-right: 8rem;
   }
+  button {
+    justify-self: start;
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    font-size: 1.2rem;
+    background: transparent;
+    color: var(--highlight);
+    transition: filter 0.3s;
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
 }

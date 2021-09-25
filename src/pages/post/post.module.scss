@@ -12,8 +12,43 @@
 }
 .postContent {
   margin-top: 2rem;
+  border-bottom: 1px solid var(--body);
+  margin-bottom: 4rem;
 
   P {
     margin: 2rem 0;
+  }
+}
+.commentPage {
+  width: 100%;
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 3rem;
+
+    .action {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 0.89rem;
+      }
+
+      &:last-child span {
+        text-align: right;
+      }
+      button {
+        margin-top: 1rem;
+        align-self: flex-start;
+        font-size: 0.93rem;
+      }
+      &:last-child button {
+        align-self: flex-end;
+      }
+
+      .next {
+        grid-column: span 2 / 7;
+      }
+    }
   }
 }
