@@ -1,8 +1,15 @@
-# Criando-um-projeto-do-zero
+# # Rockeseat Ignite Reactjs -  Blog
 
-Uma aplicação desenvolvida como desafio do Ignite 
+### Uma aplicação desenvolvida como desafio do Ignite 
 
-blog com Prismic CMS 
+### 🛠 Tecnologias
 
-Live
-https://criando-um-projeto-do-zero.vercel.app/
+* Blog com Prismic CMS 
+
+
+<h4 align="center"> 
+	🚧  Blog  🚀 Em contrução.  🚧
+</h4>
+
+
+[App in VercelApp](https://criando-um-projeto-do-zero.vercel.app/)
