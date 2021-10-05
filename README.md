@@ -1,4 +1,4 @@
-# # Rockeseat Ignite Reactjs -  Blog
+# Rockeseat Ignite Reactjs -  Blog
 
 ### Uma aplicação desenvolvida como desafio do Ignite 
 
